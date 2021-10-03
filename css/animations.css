@@ -1,0 +1,19 @@
+@keyframes scale_hero_img {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+}
+
+@-webkit-keyframes scale_hero_img {
+  from {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(1.3);
+  }
+}

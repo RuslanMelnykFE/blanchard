@@ -1,5 +1,9 @@
 @import "./header/header.css";
 @import "./navbar/navbar.css";
 @import "./navbar/navList.css";
+@import "./navbar/navbarBurger.css";
 @import "./navbar/navbarSearch.css";
 @import "./navbar/subnav.css";
+@import "./sectionHero/sectionHero.css";
+@import "./sectionHero/heroSlider.css";
+@import "./setionAbout.css";

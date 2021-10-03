@@ -1,0 +1,44 @@
+/* Hero slider
+   ========================================================================== */
+.hero-slider__picture {
+  position: relative;
+  display: block;
+  padding-bottom: 110.94%;
+  overflow: hidden;
+}
+
+.hero-slider__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-slider__item.swiper-slide-active .hero-slider__img {
+  animation: 10s linear 0s infinite alternate scale_hero_img;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-slider__picture {
+    padding-bottom: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-slider__picture {
+    padding-bottom: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-slider__picture {
+    padding-bottom: 800px;
+  }
+}
+
+/* End hero slider
+   ========================================================================== */

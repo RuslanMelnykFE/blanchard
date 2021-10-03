@@ -1,6 +1,7 @@
 import toggleHeaderPopup from './modules/popups.js'
 import dropdownNavbar from './modules/dropdown.js';
 import initSubnavSrollbar from './modules/customScrollbar.js';
+import initHeroSlider from './modules/slider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   toggleHeaderPopup({
@@ -17,4 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   dropdownNavbar.init();
   initSubnavSrollbar();
+  initHeroSlider();
 })

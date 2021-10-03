@@ -1,5 +1,6 @@
 @import "./normalize.css";
 @import "../fonts/opensans.css";
+@import "./animations.css";
 @import "./utils.css";
 @import "./core.css";
 @import "./grid.css";
