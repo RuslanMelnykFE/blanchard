@@ -1,0 +1,54 @@
+/* Burger
+   ========================================================================== */
+.burger {
+  width: 25px;
+  font-size: 0;
+  line-height: 0;
+  text-align: left;
+}
+
+.burger__line {
+  display: inline-block;
+  height: 2px;
+  background-color: var(--color-white);
+}
+
+.burger__line:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.burger__line_position_top {
+  width: 100%;
+}
+
+.burger__line_position_middle {
+  width: 16px;
+}
+
+.burger__line_position_bottom {
+  width: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    width: 36px;
+  }
+
+  .burger__line {
+    height: 3px;
+  }
+
+  .burger__line:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .burger__line_position_middle {
+    width: 28px;
+  }
+
+  .burger__line_position_bottom {
+    width: 24px;
+  }
+}
+/* End Burger
+     ========================================================================== */

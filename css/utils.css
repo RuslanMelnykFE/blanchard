@@ -1,0 +1,45 @@
+:root {
+  /* --------- Colors ---------- */
+  --color-black: #000;
+  --color-black_3: #333;
+  --color-black_04: rgba(0, 0, 0, 0.4);
+  --color-black_05: rgba(0, 0, 0, 0.5);
+  --color-black_06: rgba(0, 0, 0, 0.6);
+  --color-black_09: rgba(0, 0, 0, 0.9);
+
+  --color-gray_6: #666;
+  --color-gray_9: #999;
+  --color-gray_ea: #eaeaea;
+  --color-gray_ec: #ececec;
+  --color-gray_c4: #c4c4c4;
+  --color-gray_ca: #cacaca;
+
+  --color-red: #d11616;
+
+  --color-purple: #9d5cd0;
+  --color-purple_focus: #7943a4;
+  --color-purple_active: #7943a4;
+  --color-purple_hover: #c283f3;
+  --color-purple_d1a: #d1a9f0;
+  --color-purple_05: rgba(157, 92, 208, 0.5);
+  --color-purple_d8f: #d88f99;
+
+  --color-white: #fff;
+  --color-white_02: rgba(255, 255, 255, 0.2);
+  --color-white_085: rgba(255, 255, 255, 0.85);
+  /* --------- End Colors ---------- */
+
+  /* --------- Transitions ---------- */
+  --tr-delay: 0.3s;
+  /* --------- End Transitions ---------- */
+
+  /* --------- Z-index ---------- */
+  --zindex-dropdown: 1000;
+  --zindex-sticky: 1020;
+  --zindex-fixed: 1030;
+  --zindex-modal-backdrop: 1050;
+  --zindex-modal: 1055;
+  --zindex-popover: 1070;
+  --zindex-tooltip: 1080;
+  /* --------- End Z-index ---------- */
+}
