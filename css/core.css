@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,6 +47,11 @@ input {
   outline: none;
 }
 
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .container {
   max-width: 100%;
   width: 100%;
@@ -54,26 +60,35 @@ input {
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
 }
 
 .text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 768px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .container {
     padding: 0 50px;
   }
 
   .title {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 48px;
     line-height: 65px;
+  }
+
+  .text {
+    font-size: 16px;
   }
 }
 

@@ -24,6 +24,10 @@
   <meta name="theme-color" content="#ffffff">
 
   <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
     />
@@ -232,6 +236,214 @@
       </div>
     </nav>
   </header>
+
+  <main class="main">
+    <section class="section section-hero">
+      <div class="container section-hero__container">
+        <h1 class="title section-hero__title">
+          Прикоснитесь <br> к прекрасному
+        </h1>
+        <p class="text section-hero__text">
+          Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+        </p>
+        <a href="#" class="link btn_theme_bg-purple section-hero__link">
+          Подписаться на рассылку
+        </a>
+      </div>
+
+      <div class="swiper-container section-hero__slider hero-slider js-hero-slider">
+        <ul class="swiper-wrapper hero-slider__list">
+          <li class="swiper-slide hero-slider__item">
+            <picture class="hero-slider__picture">
+              <source
+                type="image/avif"
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/avif/hero-img-1@2x.avif 640w,
+                        ./img/hero/768/avif/hero-img-1@2x.avif 1536w,
+                        ./img/hero/992/avif/hero-img-1@2x.avif 2048w,
+                        ./img/hero/1200/avif/hero-img-1@2x.avif 3840w"
+                sizes="100vw"
+              />
+
+              <source
+                type="image/webp"
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/webp/hero-img-1@2x.webp 640w,
+                        ./img/hero/768/webp/hero-img-1@2x.webp 1536w,
+                        ./img/hero/992/webp/hero-img-1@2x.webp 2048w,
+                        ./img/hero/1200/webp/hero-img-1@2x.webp 3840w"
+                sizes="100vw"
+              />
+
+              <source
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/jpg/hero-img-1@2x.jpg 640w,
+                        ./img/hero/768/jpg/hero-img-1@2x.jpg 1536w,
+                        ./img/hero/992/jpg/hero-img-1@2x.jpg 2048w,
+                        ./img/hero/1200/jpg/hero-img-1@2x.jpg 3840w"
+                sizes="100vw"
+              />
+
+              <source type="image/avif"
+                      srcset=" ./img/hero/320/avif/hero-img-1@1x.avif 320w,
+                              ./img/hero/768/avif/hero-img-1@1x.avif 768w,
+                              ./img/hero/992/avif/hero-img-1@1x.avif 1024w,
+                              ./img/hero/1200/avif/hero-img-1@1x.avif 1920w"
+                      sizes="100vw"
+              />
+
+              <source type="image/webp"
+                      srcset=" ./img/hero/320/webp/hero-img-1@1x.webp 320w,
+                              ./img/hero/768/webp/hero-img-1@1x.webp 768w,
+                              ./img/hero/992/webp/hero-img-1@1x.webp 1024w,
+                              ./img/hero/1200/webp/hero-img-1@1x.webp 1920w"
+                      sizes="100vw"
+              />
+
+              <img class="hero-slider__img"
+                    src="./img/hero/320/jpg/hero-img-1@1x.jpg"
+                    srcset=" ./img/hero/320/jpg/hero-img-1@1x.jpg 320w,
+                            ./img/hero/768/jpg/hero-img-1@1x.jpg 768w,
+                            ./img/hero/992/jpg/hero-img-1@1x.jpg 1024w,
+                            ./img/hero/1200/jpg/hero-img-1@1x.jpg 1920w"
+                    sizes="100vw"
+                    alt="Картина замка" />
+            </picture>
+          </li>
+          <li class="swiper-slide hero-slider__item">
+            <picture class="hero-slider__picture">
+              <source
+                type="image/avif"
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/avif/hero-img-2@2x.avif 640w,
+                        ./img/hero/768/avif/hero-img-2@2x.avif 1536w,
+                        ./img/hero/992/avif/hero-img-2@2x.avif 2048w,
+                        ./img/hero/1200/avif/hero-img-2@2x.avif 3840w"
+                sizes="100vw"
+              />
+
+              <source
+                type="image/webp"
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/webp/hero-img-2@2x.webp 640w,
+                        ./img/hero/768/webp/hero-img-2@2x.webp 1536w,
+                        ./img/hero/992/webp/hero-img-2@2x.webp 2048w,
+                        ./img/hero/1200/webp/hero-img-2@2x.webp 3840w"
+                sizes="100vw"
+              />
+
+              <source
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/jpg/hero-img-2@2x.jpg 640w,
+                        ./img/hero/768/jpg/hero-img-2@2x.jpg 1536w,
+                        ./img/hero/992/jpg/hero-img-2@2x.jpg 2048w,
+                        ./img/hero/1200/jpg/hero-img-2@2x.jpg 3840w"
+                sizes="100vw"
+              />
+
+              <source type="image/avif"
+                      srcset=" ./img/hero/320/avif/hero-img-2@1x.avif 320w,
+                              ./img/hero/768/avif/hero-img-2@1x.avif 768w,
+                              ./img/hero/992/avif/hero-img-2@1x.avif 1024w,
+                              ./img/hero/1200/avif/hero-img-2@1x.avif 1920w"
+                      sizes="100vw"
+              />
+
+              <source type="image/webp"
+                      srcset=" ./img/hero/320/webp/hero-img-2@1x.webp 320w,
+                              ./img/hero/768/webp/hero-img-2@1x.webp 768w,
+                              ./img/hero/992/webp/hero-img-2@1x.webp 1024w,
+                              ./img/hero/1200/webp/hero-img-2@1x.webp 1920w"
+                      sizes="100vw"
+              />
+
+              <img class="hero-slider__img"
+                    src="./img/hero/320/jpg/hero-img-2@1x.jpg"
+                    srcset=" ./img/hero/320/jpg/hero-img-2@1x.jpg 320w,
+                            ./img/hero/768/jpg/hero-img-2@1x.jpg 768w,
+                            ./img/hero/992/jpg/hero-img-2@1x.jpg 1024w,
+                            ./img/hero/1200/jpg/hero-img-2@1x.jpg 1920w"
+                    sizes="100vw"
+                    alt="Картина замка" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide hero-slider__item">
+            <picture class="hero-slider__picture">
+              <source
+                type="image/avif"
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/avif/hero-img-3@2x.avif 640w,
+                        ./img/hero/768/avif/hero-img-3@2x.avif 1536w,
+                        ./img/hero/992/avif/hero-img-3@2x.avif 2048w,
+                        ./img/hero/1200/avif/hero-img-3@2x.avif 3840w"
+                sizes="100vw"
+              />
+
+              <source
+                type="image/webp"
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/webp/hero-img-3@2x.webp 640w,
+                        ./img/hero/768/webp/hero-img-3@2x.webp 1536w,
+                        ./img/hero/992/webp/hero-img-3@2x.webp 2048w,
+                        ./img/hero/1200/webp/hero-img-3@2x.webp 3840w"
+                sizes="100vw"
+              />
+
+              <source
+                media="(-webkit-min-device-pixel-ratio: 1.5)"
+                srcset=" ./img/hero/320/jpg/hero-img-3@2x.jpg 640w,
+                        ./img/hero/768/jpg/hero-img-3@2x.jpg 1536w,
+                        ./img/hero/992/jpg/hero-img-3@2x.jpg 2048w,
+                        ./img/hero/1200/jpg/hero-img-3@2x.jpg 3840w"
+                sizes="100vw"
+              />
+
+              <source type="image/avif"
+                      srcset=" ./img/hero/320/avif/hero-img-3@1x.avif 320w,
+                              ./img/hero/768/avif/hero-img-3@1x.avif 768w,
+                              ./img/hero/992/avif/hero-img-3@1x.avif 1024w,
+                              ./img/hero/1200/avif/hero-img-3@1x.avif 1920w"
+                      sizes="100vw"
+              />
+
+              <source type="image/webp"
+                      srcset=" ./img/hero/320/webp/hero-img-3@1x.webp 320w,
+                              ./img/hero/768/webp/hero-img-3@1x.webp 768w,
+                              ./img/hero/992/webp/hero-img-3@1x.webp 1024w,
+                              ./img/hero/1200/webp/hero-img-3@1x.webp 1920w"
+                      sizes="100vw"
+              />
+
+              <img class="hero-slider__img"
+                    src="./img/hero/320/jpg/hero-img-3@1x.jpg"
+                    srcset=" ./img/hero/320/jpg/hero-img-3@1x.jpg 320w,
+                            ./img/hero/768/jpg/hero-img-3@1x.jpg 768w,
+                            ./img/hero/992/jpg/hero-img-3@1x.jpg 1024w,
+                            ./img/hero/1200/jpg/hero-img-3@1x.jpg 1920w"
+                    sizes="100vw"
+                    alt="Картина замка" />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-about">
+      <div class="container section-about__container">
+        <h2 class="title section-about__title">
+          О нас
+        </h2>
+        <p class="text section-about__text">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Footer
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   <script type="module" src="./js/app.js"></script>
