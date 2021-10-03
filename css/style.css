@@ -1,10 +1,8 @@
 @import "./normalize.css";
+@import "../fonts/opensans.css";
+@import "./utils.css";
+@import "./core.css";
+@import "./grid.css";
+@import "./elements.css";
 
-@import "../fonts/fonts.css";
-
-body {
-  font-family: "OpenSans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-}
+@import "./components/modules.css";

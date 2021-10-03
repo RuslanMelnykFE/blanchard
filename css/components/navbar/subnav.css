@@ -1,0 +1,165 @@
+/* End Subnav
+   ========================================================================== */
+.subnav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 0;
+  padding: 0 40px;
+  padding-right: 19px;
+  overflow: hidden;
+  background-color: var(--color-black_06);
+  transform: translateY(calc(100% + 19px));
+  transition: var(--tr-delay) linear;
+  transition-property: height, padding;
+}
+
+.subnav__list {
+  height: 220px;
+  padding-right: 21px;
+  overflow-y: auto;
+}
+
+.subnav__item {
+  background: no-repeat center center, var(--color-purple_d8f);
+  background-size: cover;
+}
+
+.subnav__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.subnav__link {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  width: 100%;
+  padding: 13px 14px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+  color: var(--color-white) !important;
+  transition: background var(--tr-delay) ease-in-out;
+}
+
+.subnav__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: border var(--tr-delay) ease-in-out;
+  transition-property: border;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.subnav__link:focus,
+.subnav__link:focus:not(:active) {
+  background-color: transparent;
+}
+
+.subnav__link:active {
+  background: linear-gradient(
+    0deg,
+    rgba(194, 131, 243, 0.4),
+    rgba(194, 131, 243, 0.4)
+  );
+}
+
+.subnav__link:hover::before,
+.subnav__link:focus::before {
+  border-color: var(--color-purple);
+}
+
+.subnav__link:active::before {
+  border-color: var(--color-purple_d1a);
+}
+
+.subnav__item_pointer_tintoretto {
+  background-image: url("/img/subnav/tintoretto.jpg");
+}
+
+.subnav__item_pointer_frederick {
+  background-image: url("/img/subnav/frederick.jpg");
+}
+.subnav__item_pointer_leonardo {
+  background-image: url("/img/subnav/leonardo.jpg");
+}
+.subnav__item_pointer_verrocchio {
+  background-image: url("/img/subnav/verrocchio.jpg");
+}
+.subnav__item_pointer_mone {
+  background-image: url("/img/subnav/mone.jpg");
+}
+.subnav__item_pointer_sisley {
+  background-image: url("/img/subnav/sisley.jpg");
+}
+.subnav__item_pointer_manet {
+  background-image: url("/img/subnav/manet.jpg");
+}
+.subnav__item_pointer_renoir {
+  background-image: url("/img/subnav/renoir.jpg");
+}
+.subnav__item_pointer_vangogh {
+  background-image: url("/img/subnav/vangogh.jpg");
+}
+.subnav__item_pointer_cezanne {
+  background-image: url("/img/subnav/cezanne.jpg");
+}
+.subnav__item_pointer_gauigun {
+  background-image: url("/img/subnav/gauigun.jpg");
+}
+.subnav__item_pointer_sulfur {
+  background-image: url("/img/subnav/sulfur.jpg");
+}
+.subnav__item_pointer_kandinsky {
+  background-image: url("/img/subnav/kandinsky.jpg");
+}
+.subnav__item_pointer_marinetti {
+  background-image: url("/img/subnav/marinetti.jpg");
+}
+.subnav__item_pointer_malevich {
+  background-image: url("/img/subnav/malevich.jpg");
+}
+.subnav__item_pointer_picasso {
+  background-image: url("/img/subnav/picasso.jpg");
+}
+.subnav__item_pointer_carr {
+  background-image: url("/img/subnav/carr.jpg");
+}
+.subnav__item_pointer_pratella {
+  background-image: url("/img/subnav/pratella.jpg");
+}
+.subnav__item_pointer_severini {
+  background-image: url("/img/subnav/tintoretto.jpg");
+}
+.subnav__item_pointer_balla {
+  background-image: url("/img/subnav/tintoretto.jpg");
+}
+
+.subnav__list .simplebar-scrollbar::before {
+  left: 0;
+  right: 0;
+  width: 2px;
+  opacity: 1;
+  border-radius: 0;
+  background-color: var(--color-white);
+}
+
+.subnav__list .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 0px;
+  bottom: 0px;
+}
+
+.subnav__list .simplebar-track {
+  width: 2px;
+  background-color: var(--color-black);
+}
+/* End Subnav
+     ========================================================================== */

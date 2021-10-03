@@ -23,13 +23,217 @@
   <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Blanchard</title>
 </head>
 <body>
-  Blanchard
+  <header class="header js-header">
+    <nav class="header__navbar navbar navbar navbar_position_top">
+      <div class="container row navbar__container">
+        <button type="button" class="btn_theme_icon navbar__burger burger js-burger" aria-controls="navbarToggleNavContent" aria-expanded="false" aria-label="Показать навигацию">
+          <span class="burger__line burger__line_position_top"></span>
+          <span class="burger__line burger__line_position_middle"></span>
+          <span class="burger__line burger__line_position_bottom"></span>
+        </button>
 
+        <a href="#" class="navbar__brand">
+          <img src="./img/svg/logo.svg" alt="Логотип художественной галереи Blanchard" class="navbar__logo">
+        </a>
+
+        <div id="navbarToggleNavContent" class="navbar__wrapper">
+          <button class="btn_theme_icon btn_type_close navbar__btn-hide js-btn-hide-navlist" aria-controls="navbarToggleNavContent" aria-label="Скрыть навигацию"></button>
+          <ul class="navbar__nav nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="link link_theme_white nav-list__link">О нас</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="link link_theme_white nav-list__link">Галерея</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="link link_theme_white nav-list__link">Каталог</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="link link_theme_white nav-list__link">События</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="link link_theme_white nav-list__link">Издания</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="link link_theme_white nav-list__link">Проекты</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="link link_theme_white nav-list__link">Контакты</a>
+            </li>
+          </ul>
+
+          <a href="#" class="link link_type_login btn_theme_border navbar__login navbar__login_device_mobile">
+            <span class="link__icon"></span><span class="link__text">Войти</span></a>
+        </div>
+
+        <a href="#" class="row link link_type_login navbar__login navbar__login_device_desctop">
+          <span class="link__icon"></span>
+          <span>Войти</span>
+        </a>
+
+        <div class="navbar__search-block search-block">
+          <button type="button" class="btn_theme_icon btn_type_search search-block__btn-show js-btn-show-search" aria-controls="toggleSearch" aria-label="Показать поле поиска">
+          </button>
+
+          <form id="toggleSearch" action="" class="search-block__form form">
+            <div class="row form__field search-field">
+              <button tupe="submit" class="btn_theme_icon btn_type_search search-field__btn"></button>
+              <input type="text" class="search-field__input">
+            </div>
+            <button type="button" class="btn_theme_icon btn_type_close form__btn-hide js-btn-hide-search" aria-label="Скрыть поле поиска"></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <nav class="header__navbar navbar navbar_position_bottom">
+      <div class="container row navbar__container">
+        <ul class="navbar__nav nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="link link_type_dropdown nav-list__link" aria-haspopup="true" aria-expanded="false">Реализм</a>
+            <div class="nav-list__subnav subnav" role="menu">
+              <ul class="subnav__list" data-simplebar="subnav">
+                <li role="menuitem" class="subnav__item subnav__item_pointer_tintoretto">
+                  <a href="#" class="link subnav__link" tabindex="-1">Тинторетто</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_frederick">
+                  <a href="#" class="link subnav__link" tabindex="-1">Фридрих</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_leonardo">
+                  <a href="#" class="link subnav__link" tabindex="-1">Леонардо</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_verrocchio">
+                  <a href="#" class="link subnav__link" tabindex="-1">Верроккьо</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_tintoretto">
+                  <a href="#" class="link subnav__link" tabindex="-1">Тинторетто</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_frederick">
+                  <a href="#" class="link subnav__link" tabindex="-1">Фридрих</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_leonardo">
+                  <a href="#" class="link subnav__link" tabindex="-1">Леонардо</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_verrocchio">
+                  <a href="#" class="link subnav__link" tabindex="-1">Верроккьо</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="link link_type_dropdown nav-list__link" aria-haspopup="true" aria-expanded="false">Импрессионизм</a>
+            <div class="nav-list__subnav subnav" role="menu">
+              <ul class="subnav__list" data-simplebar="subnav">
+                <li role="menuitem" class="subnav__item subnav__item_pointer_mone">
+                  <a href="#" class="link subnav__link" tabindex="-1">Моне</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_sisley">
+                  <a href="#" class="link subnav__link" tabindex="-1">Сислей</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_manet">
+                  <a href="#" class="link subnav__link" tabindex="-1">Мане</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_renoir">
+                  <a href="#" class="link subnav__link" tabindex="-1">Ренуар</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_mone">
+                  <a href="#" class="link subnav__link" tabindex="-1">Моне</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_sisley">
+                  <a href="#" class="link subnav__link" tabindex="-1">Сислей</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_manet">
+                  <a href="#" class="link subnav__link" tabindex="-1">Мане</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="link link_type_dropdown nav-list__link" aria-haspopup="true" aria-expanded="false">Постимпрессионизм</a>
+            <div class="nav-list__subnav subnav" role="menu">
+              <ul class="subnav__list" data-simplebar="subnav">
+                <li role="menuitem" class="subnav__item subnav__item_pointer_vangogh">
+                  <a href="#" class="link subnav__link" tabindex="-1">Ван Гог</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_cezanne">
+                  <a href="#" class="link subnav__link" tabindex="-1">Сезанн</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_gauigun">
+                  <a href="#" class="link subnav__link" tabindex="-1">Гоген</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_sulfur">
+                  <a href="#" class="link subnav__link" tabindex="-1">Сёра</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_vangogh">
+                  <a href="#" class="link subnav__link" tabindex="-1">Ван Гог</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_cezanne">
+                  <a href="#" class="link subnav__link" tabindex="-1">Сезанн</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="link link_type_dropdown nav-list__link" aria-haspopup="true" aria-expanded="false">Авангард</a>
+            <div class="nav-list__subnav subnav" role="menu">
+              <ul class="subnav__list" data-simplebar="subnav">
+                <li role="menuitem" class="subnav__item subnav__item_pointer_kandinsky">
+                  <a href="#" class="link subnav__link" tabindex="-1">Кандинский</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_marinetti">
+                  <a href="#" class="link subnav__link" tabindex="-1">Маринетти</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_malevich">
+                  <a href="#" class="link subnav__link" tabindex="-1">Малевич</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_picasso">
+                  <a href="#" class="link subnav__link" tabindex="-1">Пикассо</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_marinetti">
+                  <a href="#" class="link subnav__link" tabindex="-1">Маринетти</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="link link_type_dropdown nav-list__link" aria-haspopup="true" aria-expanded="false">Футуризм</a>
+            <div class="nav-list__subnav subnav" role="menu">
+              <ul class="subnav__list" data-simplebar="subnav">
+                <li role="menuitem" class="subnav__item subnav__item_pointer_carr">
+                  <a href="#" class="link subnav__link" tabindex="-1">Карра</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_pratella">
+                  <a href="#" class="link subnav__link" tabindex="-1">Прателла</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_severini">
+                  <a href="#" class="link subnav__link" tabindex="-1">Северини</a>
+                </li>
+                <li role="menuitem" class="subnav__item subnav__item_pointer_balla">
+                  <a href="#" class="link subnav__link" tabindex="-1">Балла</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <form action="" class="search-block__form form">
+          <div class="row form__field search-field">
+            <button tupe="submit" class="btn_theme_icon btn_type_search search-field__btn"></button>
+            <input type="text" class="search-field__input" placeholder="Поиск по сайту">
+          </div>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   <script type="module" src="./js/app.js"></script>
 </body>
 </html>
