@@ -38,6 +38,11 @@
   .hero-slider__picture {
     padding-bottom: 800px;
   }
+
+  .hero-slider__img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* End hero slider

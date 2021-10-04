@@ -15,6 +15,7 @@ const dropdownNavbar = {
   subNavLinkIdx: 0,
 
   init() {
+    this.disableSrollDocument();
     [...this.navbarLinks].forEach((navLink, idx) => this.appendEventNavLinks(navLink, idx));
     this.appendEventSubnavLinks();
     document.addEventListener('click', ({ target }) => {
@@ -25,6 +26,16 @@ const dropdownNavbar = {
         this.subNavLinkIdx = 0;
         this.removeAllActiveClass();
         return false;
+      }
+    })
+  },
+
+  disableSrollDocument() {
+    document.addEventListener('keydown', (e) => {
+      const { keyCode } = e;
+
+      if (keyCode === this.keys.down ||  keyCode === this.keys.up) {
+        e.preventDefault();
       }
     })
   },
@@ -77,7 +88,6 @@ const dropdownNavbar = {
       e.preventDefault();
       const { target } = e;
       this.currentNavbarLinkIdx = navLinkIdx;
-      console.log(' this.currentNavbarLinkIdx: ',  this.currentNavbarLinkIdx);
       this.subNavLinkIdx = 0;
       this.gotoSubNavItem(parent, this.subNavLinkIdx);
       this.dropdownSubnavEventHandler({ target, parent });
@@ -99,7 +109,6 @@ const dropdownNavbar = {
 				this.tabEventHandler(e.shiftKey);
 				break;
       case this.keys.enter:
-      case this.keys.space:
       case this.keys.down:
         target.click();
         this.gotoSubNavItem(parent.querySelector('.subnav__list'), 0);
@@ -110,9 +119,6 @@ const dropdownNavbar = {
         const subindex = subnav.querySelectorAll('.subnav__link').length - 1;
         this.gotoSubNavItem(subnav, subindex);
         break;
-      case this.keys.esc:
-        document.querySelector('#escape').setAttribute('tabindex', '-1');
-        document.querySelector('#escape').focus();
     }
   },
 
